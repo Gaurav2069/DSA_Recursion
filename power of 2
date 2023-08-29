@@ -1,0 +1,28 @@
+// WAP TO FIND THE POWER OF 2 USING RECUSION
+
+
+#include <iostream>
+using namespace std;
+
+int power_(int n){
+    
+    if(n==0){    //base case
+        return 1;
+    }
+    
+    int required_value = 2*power_(n-1); //recursive relation
+    return  required_value;
+}
+
+int main() {
+    // Write C++ code here
+    cout << "Hello world!"<<endl<<endl;
+    int n;
+    cout<<"Enter the No."<<endl;
+    cin>>n;
+    
+    int p = power_(n);
+    cout<<p<<endl;
+
+    return 0;
+}
