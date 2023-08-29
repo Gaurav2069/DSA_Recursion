@@ -1,0 +1,28 @@
+// WAP TO PRINT A NO. IN DECREASING ORDER USING RECUSION
+
+#include <iostream>
+using namespace std;
+
+void prints(int n){
+    
+    if(n==0){    //base case
+        return ;
+    }
+    
+    cout<<n<<endl;
+    
+    prints(n-1); //recursive relation
+
+}
+
+int main() {
+    // Write C++ code here
+    cout << "Hello world!"<<endl<<endl;
+    int n;
+    cout<<"Enter the No."<<endl<<endl;
+    cin>>n;
+    
+    prints(n);
+    
+    return 0;
+}
